@@ -38,12 +38,14 @@ jobs:
 
             - name: list files
               run:  ls -ltra
+              
+            - name: download artifact
+              uses: actions/download-artifact@v8
+              with:
+               name: my-artifact
 
-            - name: run shell script
-              run:
-                |
-                chmod +x script.sh
-                ./script.sh
+            - name: list
+              run: ls -l
 
 
        
