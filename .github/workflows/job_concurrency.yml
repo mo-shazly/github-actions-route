@@ -36,6 +36,7 @@ jobs:
 
             - name: run shell script
               timeout-minutes: 1
+              
               run:
                 |
                 chmod +x script.sh
