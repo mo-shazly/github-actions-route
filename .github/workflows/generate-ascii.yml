@@ -27,6 +27,7 @@ jobs:
               with:
                name: my-artifact
                path: dragon.txt
+               retention-days: 5
 
     sec_job:
         needs: first_job
