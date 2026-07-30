@@ -11,7 +11,7 @@ jobs:
                 node: [16,20,18]
 
 
-            steps:
+        steps:
                 - name: print env info
                   run: |
                    echo "running on os ${{ matrix.os }}"
