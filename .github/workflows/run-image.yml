@@ -1,0 +1,23 @@
+name: run image
+
+on: push
+
+jobs:
+    run-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: docker info
+              run: docker info
+
+            - name: run image
+              run: docker run hello-world
+
+
+    run-image-windows:
+        runs-on: windows-latest
+        steps:
+            - name: docker info
+              run: docker info
+
+            - name: run image
+              run: docker run hello-world
