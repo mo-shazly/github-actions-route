@@ -2,7 +2,9 @@ name: my first workflow | shell script
 
 on:
    workflow_dispatch:
-  
+concurrency:
+          group: prod-deploy1
+          cancel-in-progress: false
      
 jobs:
     first_job:
