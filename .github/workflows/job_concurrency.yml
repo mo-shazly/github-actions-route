@@ -31,7 +31,7 @@ jobs:
             - name: list files
               run:  ls -ltra
 
-            - name: run shell scriptttt
+            - name: run shell script
               run:
                 |
                 chmod +x script.sh
